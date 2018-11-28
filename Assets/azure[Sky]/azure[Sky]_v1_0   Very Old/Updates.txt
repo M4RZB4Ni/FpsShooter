@@ -1,0 +1,20 @@
+'                                  VERSION 1.0.2                              '
+===============================================================================
+' Implementations '
+* Added a function to set the time of day manually by scripts while in gameplay, calling setTime(float time, float dayDuration)
+find out more in Forum Thread " http://forum.unity3d.com/threads/azure-sky-time-of-day-dinamic-skybox.322773/ "
+===============================================================================
+
+
+
+'                                  VERSION 1.0.1                              '
+===============================================================================
+' Bugs '
+* Fixed bug that resets the position of the sun and moon to zero when the game starts if the time was greater or equal to 18 hours
+* Fixed bug sun and moon reset latitude position when starting the game.
+-------------------------------------------------------------------------------
+' Implementations '
+* Added color transition of the moon between horizon and zenith angle. Selectable on the "Moon Seetings" tab
+* Added extinction of the stars on the horizon. It can be configured in "Sky seetings" tab in the "StarExtinction" option.
+* Now supports Linear and Gama color space.
+===============================================================================

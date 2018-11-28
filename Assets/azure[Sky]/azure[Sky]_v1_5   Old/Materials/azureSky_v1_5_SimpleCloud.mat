@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: azureSky_v1_5_SimpleCloud
+  m_Shader: {fileID: 4800000, guid: b8e2a27e31faa0441a26410db7e27f4c, type: 3}
+  m_ShaderKeywords: HDR_OFF
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Cloud1:
+        m_Texture: {fileID: 2800000, guid: 1a6748f9e826f894a83c2fa9304764bd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Cloud2:
+        m_Texture: {fileID: 2800000, guid: 12c0446850063fd488e069c8afe95c90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - moonSampler:
+        m_Texture: {fileID: 2800000, guid: c6dac5bcdea892f43864ba7b0c72cdbf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - starField:
+        m_Texture: {fileID: 8900000, guid: 4f8c260a91ced204894ad5a76d3d18ae, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - starNoise:
+        m_Texture: {fileID: 8900000, guid: 79092791af307a74ba3434575d0f46b9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Cloud1Speed: 0.05
+    - Cloud2Speed: 0.055
+    - Gama: 1
+    - cloudSpeed: 0.05
+    - dayLuminace: 1
+    - dayLuminance: 1
+    - horizonAltitude: 0.1
+    - moonLightIntensity: 0.25
+    - moonLightSize: 10
+    - nightIntensity: 0.2
+    - nightLuminace: 1.35
+    - nightLuminance: 1.35
+    - scintillationSpeed: 10
+    - shadowIntensity: 0.015
+    - shadowSize: 1.5
+    - shadowX: 0
+    - shadowY: 0.24
+    - starsExtinction: 1.5
+    - starsIntensity: 2
+    - sunsetIntensity: 1
+    m_Colors:
+    - moonLightColor: {r: 0, g: 0.5, b: 1, a: 1}
+    - sunsetColor: {r: 1, g: 1, b: 1, a: 1}

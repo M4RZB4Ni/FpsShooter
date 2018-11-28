@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: afbfc44951cb0e542b4a7efc04b4caa0
+timeCreated: 1430565119
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - SUN: {instanceID: 0}
+  - MOON: {instanceID: 0}
+  - SKYMAT: {fileID: 2100000, guid: a445409ff62ef1a489cad0f1f5d339c8, type: 2}
+  - FOGMAT: {fileID: 2100000, guid: 0f8af90c3ebc834428dc705927f601b6, type: 2}
+  - MOONMAT: {fileID: 2100000, guid: f7e0b4008d02e11459c605091c212986, type: 2}
+  - EmptySkyTexture: {fileID: 2800000, guid: 728caba60ffc494418a77e824570d070, type: 3}
+  - Cloud1: {fileID: 2800000, guid: 42fc440d8f9c42e468f65846daeeac33, type: 3}
+  - Cloud2: {fileID: 2800000, guid: a347511e656fcb34c8c5c720c6c7974c, type: 3}
+  - StarField: {fileID: 2800000, guid: 1241d56c4a0f9b547aa8191803df5d54, type: 3}
+  - StarNoise: {fileID: 2800000, guid: e80c3c84ea861404d8a427db8b7abf04, type: 3}
+  - MoonTexture: {fileID: 2800000, guid: ce188cbc36704ff41804af99309de435, type: 3}
+  - MoonShadow: {fileID: 2800000, guid: 55e17fd5af34b174188caf39eb1f83a2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

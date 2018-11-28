@@ -1,0 +1,135 @@
+////////////////////////////////////////////////
+//// Creating and Configuring the azure[Sky]////
+////////////////////////////////////////////////
+===============================================================================
+* First creat a empty GameObject in the scene... "Menu>>GameObject>>Create Empty"
+-This GameObject will control the sky...
+-------------------------------------------------------------------------------
+===============================================================================
+* With this selected GameObject in the scene,attach the azureSkyControl script to it
+-You can simply drag the azureSkyControl script to object or go on "Menu>>Component>>azure[Sky]>>Sky Control"
+-------------------------------------------------------------------------------
+===============================================================================
+* The first thing you need to do is drag the game objects and materials to their proper places in the "Obj & Mat" inspector tab
+-Drag your sun GameObject to the property 'Sun GameObject'
+-Drag your moon GameObject to the property 'Moon GameObject'
+-Drag the sky material to the property 'Sky Material'
+-Drag the fog material to the property 'Fog Material'
+-Drag the moon material to the property 'Moon Material'
+
+Obs: To have no errors in the script, do not leave any empty property,If this happens...
+the script is automatically disabled causing the non-functioning of the effect.To fix this assign all empty properties and re-enable the script
+-------------------------------------------------------------------------------
+===============================================================================
+* Press the 'Send to Skybox' button on the tab options
+-This will automatically add the attached sky material to the Skybox
+-Or you can manually drag the sky material to Skybox in Lighting Window
+-------------------------------------------------------------------------------
+===============================================================================
+* Attach to the camera the azureSkyFogScattering script. Drag to the camera, or with selected the camera go to "Menu>>Component>>azure[Sky]>>Fog"
+- This script is a image effect that go simulate the fog scattering.
+- Obs: Be sure to add the fog material in the script property in the inspector
+-------------------------------------------------------------------------------
+===============================================================================
+* You are now ready to configure the artistic sky effect
+
+
+////Scattering Tab////
+* 'Rayleigh' Controls the rayleigh of the sky   			// http://en.wikipedia.org/wiki/Rayleigh_scattering
+* 'Mie' Controls the mie of the sky             			// http://en.wikipedia.org/wiki/Mie_scattering
+* 'turbidity' Controls the turbidity of the sky
+* 'G' Controls the directionality factor of HG              // http://omlc.org/education/ece532/class3/hg.html
+* 'Sun Intensity' Controls the intensity of sun light
+* 'Moon Intensity' Controls the intensity of moon light
+-------------------------------------------------------------------------------
+////Textures Tab////
+* 'Base (Empty Sky)' This texture is used in common with the sky and fog material to improve the effect.It need not be changed
+* 'Clouds(Layer1)' First layer cloud, this will be multiplied by the second cloud layer to form the final cloud
+* 'Clouds(Layer2)' Second layer cloud, this will be multiplied by the first cloud layer to form the final cloud
+* 'Star Field' Star Field texture
+* 'Star Noise Scintillation' Noise texture to create the scintillation of stars
+* 'Moon Texture' Moon texture that will be sent to the moon material
+* 'Moon Shadow'  Texture that will simulate the moon shadow
+-------------------------------------------------------------------------------
+////Sky Settings Tab////
+* 'Sunset/Sunrise Color' Sunset and sunrise color effect
+* 'Moonset/Moonrise color' Moonset and moonrise color effect
+* 'Sky Exposure' Exposure of the sky
+* 'Day Luminance' Luminance of the day
+* 'Night Luminance' Luminance of the night
+* 'Day/Night Speed Transition' Transition speed between day and night
+* 'Cloud Layer1 Speed' Cloud movement speed of the first layer
+* 'Cloud Layer2 Speed' Cloud movement speed of the second layer
+* 'Cloud Layer1 Initial Rotation' Sets the initial rotation of the clouds layer1
+* 'Cloud Layer2 Initial Rotation' Sets the initial rotation of the clouds layer2
+* 'Star Scintillation Speed' Speed of stars scintillation
+* 'Star Intensity' Intensity of the stars, if set to zero not appear stars
+* 'Star Blend' Time it will take to emerge stars at night and disappear before sunrise
+* 'Star Starting Rotation' Rotation of the stars on the horizon
+* 'Sunset Initial Altitude' Sun altitude in the sky that will start and finish the 'sunset and sunrise' effect
+* 'Moonset Initial Altitude' Moon altitude in the sky that will start and finish the 'moonset and moonrise' effect
+* 'Horizon Altitude' Controls the sky horizon altitude
+-------------------------------------------------------------------------------
+////Fog Settings Tab////
+* 'Normal Fog Color' Controls the color of the normal fog
+* 'Scattering Fog Distance' Controls the distances that begins the blend between normal fog and scattering fog
+* 'Scattering Fog Density' Density of the fog scattering
+* 'Normal Fog Distance' Controls the distance of the normal fog
+* 'Normal Fog Density' Controls the density of the normal fog
+* 'Normal Fog Min/Max' Controls the maximum darkness/brightness of the fog will receive at night and day
+-------------------------------------------------------------------------------
+////Moon Settings Tab////
+* 'Shadow X Axis' Horizontal position of the moon shadow
+* 'Shadow Y Axis' Vertical position of the moon shadow
+* 'Shadow Size' Controls the size of the moon shadow
+* 'Shadow Intensity' Controls the intensity of the moon shadow
+* 'Moon color Intensity' Controls the intensity of the moon color
+-------------------------------------------------------------------------------
+////Time of Day Tab////
+* 'Current Time' Controls the current time of day.This will be taken into consideration to control the sun starting position when starting the game.
+* 'UTC' Universal Time Coordinated or time zone.
+* 'Longitude' Longitude of the sun, used to control the direction that the sun will rise (the east of the scene).
+* 'Day Duration in Minutes' Time of day/night cycle in real minutes '1h = 60min, 24h = 1440min'.
+-------------------------------------------------------------------------------
+////Options Tab////
+* 'Render Side'    Side of the mesh-normals that will draw the sky.
+* 'Send to Skybox' Button that sends the selected sky material on the "Obj & Mat" tab for the skybox.
+
+
+
+////////////////////////////////////
+//// Scripts in Menu Components ////
+////////////////////////////////////
+* "Menu>>Component>>azure[Sky]>>Fog": Add to the selected GameObject
+the component that will create the fog effect. This is an image effect, so use in a camera.
+
+* "Menu>>Component>>azure[Sky]>>Sky Control": Add to the selected GameObject
+the component that will control all the sky and effects parameters.Use this in any game object.
+
+* "Menu>>Component>>azure[Sky]>>Moon Light Transition": Controls the intensity of moonlight if you have
+a directional light to simulate the moonlight in the game. Use this in a directional light.
+The intensity of the lens flare of this light is also affected by this script.
+
+* "Menu>>Component>>azure[Sky]>>Sun Light Transition": Controls the intensity of sunlight if you have
+a directional light to simulate the sunlight in the game. Use this in a directional light.
+- This script also controls the ambient color when it is day or night.
+- The intensity of the lens flare of this light is also affected by this script.
+
+
+
+//////////////////////////////
+//// Relevant Informations ///
+//////////////////////////////
+* Textures of clouds and stars should be in panoramic mode.
+
+* If you apply the Antialiasing image effect, place the Fog Scattering image effect before him.
+
+* For the Cloud and Star textures work properly, make sure that the import mode is unchecked 'Generate Mip Maps', Wrap Mode is 'Repeat'.
+
+* Fog scattering is an image effect, so it needs the script PostEffectsBase.cs.
+- If it is not installed on the project go to "Menu>>Assets>>ImportPackage>>Effects" to import the image effects scripts.
+
+* Fog will affect only the objects that draw to the depth buffer, use for vegetation speedtree shaders.
+
+* If Anti Aliasing is enabled on quality settings can happen errors in the fog scattering image effect. Disable Anti Aliasing in
+quality settings to the fog works properly.

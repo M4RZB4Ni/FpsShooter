@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: azure[Sky]_v2_0_AnimatedCloud
+  m_Shader: {fileID: 4800000, guid: da8bf4ba0243d1a4393ee5f0feb8a2a9, type: 3}
+  m_ShaderKeywords: HDR_OFF
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MilkyWay:
+        m_Texture: {fileID: 8900000, guid: 6502ac24d03069446b51e1dd6fa589d5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Rx: 1
+    - _Ry: 1
+    - _Rz: 1
+    - _milkyWayIntensity: 0
+    - _milkyWayPow: 2.5
+    m_Colors:
+    - _FogColor: {r: 0.64705884, g: 0.81014186, b: 1, a: 0}
+    - _MilkyWayRot: {r: 0, g: 0, b: 0, a: 0}
+    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}

@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: a3ac596955812f34182940825fadecc1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: _driver
+    100002: bumber
+    100004: //RootNode
+    100006: details
+    100008: glasf
+    100010: glash
+    100012: kaba
+    100014: kabi
+    100016: licht
+    100018: motor
+    100020: plane
+    100022: pritsche
+    100024: radf
+    100026: radp
+    100028: rahmen
+    100030: rrad
+    100032: tools
+    100034: unterbau
+    100036: verdeck
+    400000: _driver
+    400002: bumber
+    400004: //RootNode
+    400006: details
+    400008: glasf
+    400010: glash
+    400012: kaba
+    400014: kabi
+    400016: licht
+    400018: motor
+    400020: plane
+    400022: pritsche
+    400024: radf
+    400026: radp
+    400028: rahmen
+    400030: rrad
+    400032: tools
+    400034: unterbau
+    400036: verdeck
+    2100000: motor1
+    2100002: kaba
+    2100004: player
+    2100006: tools
+    2100008: licht
+    2100010: detail
+    2100012: fenster
+    2100014: kabi
+    2100016: rahmen
+    2100018: bumber
+    2100020: radf
+    2100022: radp
+    2100024: rrad
+    2100026: Mat_5
+    2100028: pritsche
+    2300000: _driver
+    2300002: bumber
+    2300004: details
+    2300006: glasf
+    2300008: glash
+    2300010: kaba
+    2300012: kabi
+    2300014: licht
+    2300016: motor
+    2300018: plane
+    2300020: pritsche
+    2300022: radf
+    2300024: radp
+    2300026: rahmen
+    2300028: rrad
+    2300030: tools
+    2300032: unterbau
+    2300034: verdeck
+    3300000: _driver
+    3300002: bumber
+    3300004: details
+    3300006: glasf
+    3300008: glash
+    3300010: kaba
+    3300012: kabi
+    3300014: licht
+    3300016: motor
+    3300018: plane
+    3300020: pritsche
+    3300022: radf
+    3300024: radp
+    3300026: rahmen
+    3300028: rrad
+    3300030: tools
+    3300032: unterbau
+    3300034: verdeck
+    4300000: verdeck
+    4300002: motor
+    4300004: _driver
+    4300006: licht
+    4300008: rrad
+    4300010: plane
+    4300012: tools
+    4300014: glasf
+    4300016: glash
+    4300018: unterbau
+    4300020: radp
+    4300022: radf
+    4300024: bumber
+    4300026: kabi
+    4300028: rahmen
+    4300030: pritsche
+    4300032: kaba
+    4300034: details
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
